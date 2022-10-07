@@ -1,26 +1,38 @@
 ﻿//Задача 41: Пользователь вводит с клавиатуры M чисел. 
 //Посчитайте, сколько чисел больше 0 ввёл пользователь.
+// 0, 7, 8, -2, -2 -> 2
+//1, -7, 567, 89, 223-> 3
 
 int GetLength()
 {
-Console.WriteLine("Введите чило от -1000 до 1000");
-int numbers = int.Parse(Console.ReadLine()?? "");
-return numbers;
+    Console.WriteLine("Введите число");
+    int number = int.Parse(Console.ReadLine() ?? "");
+    return number;
 }
+int a = GetLength();
+int b = GetLength();
+int c = GetLength();
+int d = GetLength();
+int f = GetLength();
+int g = GetLength();
 
-//int [] arr = new int[numbers];
-int coint = 0;
-//int NegativeNumbers()
+int count = 0;
+//void FindingPositiveNumbers(int a, int b, int c, int d, int f, int g)
 //{
-   for (int i = 0; i < arr.Length; i++)
-   {
-     if (arr[i] < 0)
-     {
-        coint++;
-     }
-   }
+    if (a > 0)
+    count = count + 1;
+    if (b > 0)
+    count = count + 1;
+    if (c > 0)
+    count = count + 1;  
+    if (d > 0)
+    count = count + 1;
+    if (f > 0)
+    count = count + 1;
+    if (g > 0)
+    count = count + 1; 
 
-    return coint;
-  
+Console.WriteLine($"Количество положительных чисел равно: {count}");
 
-Console.WriteLine(coint);
+
+
